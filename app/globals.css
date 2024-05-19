@@ -2,32 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* styles.css or globals.css */
+.custom-gradient {
+  background:
+    radial-gradient(100% 100% at 100% 100%, #0000 46%, #905fb0 47% 53%, #0000 54%) 12px 12px,
+    radial-gradient(100% 100% at 0 0, #0000 46%, #905fb0 47% 53%, #0000 54%) 12px 12px,
+    radial-gradient(100% 100%, #0000 22%, #905fb0 23% 29%, #0000 30% 34%, #905fb0 35% 41%, #0000 42%) #fb7d98;
+  background-size: 24px 24px;
 }
